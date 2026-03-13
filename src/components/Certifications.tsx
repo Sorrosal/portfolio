@@ -7,12 +7,13 @@ export default function Certifications() {
     <section id="certifications" className="py-16 sm:py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0f172a]/40 to-transparent pointer-events-none" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+        {/* Centered section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-10 sm:mb-14"
+          className="text-center mb-10 sm:mb-14"
         >
           <span className="text-xs font-mono text-cyan-400 tracking-widest uppercase mb-3 block">
             Credentials

@@ -34,7 +34,6 @@ export const experience = [
     description: [
       "Led the development of an AI-powered call management MVP that increased efficiency by 200% using a .NET backend and a React Native client.",
       "Implemented Azure architecture with Cognitive Services to support 500 simultaneous calls, achieving 85% accuracy in recognition.",
-      "Secured €80,000 in funding by leading the project from ideation through to successful deployment.",
       "Coordinated cross-functional teams to define and meet pertinent use cases for the product.",
     ],
   },

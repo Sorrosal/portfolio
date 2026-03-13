@@ -7,12 +7,13 @@ export default function Experience() {
     <section id="experience" className="py-16 sm:py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0f172a]/30 to-transparent pointer-events-none" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+        {/* Centered section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-10 sm:mb-14"
+          className="text-center mb-10 sm:mb-14"
         >
           <span className="text-xs font-mono text-cyan-400 tracking-widest uppercase mb-3 block">
             Career
@@ -22,7 +23,7 @@ export default function Experience() {
           </h2>
         </motion.div>
 
-        <div className="relative">
+        <div className="relative max-w-3xl mx-auto">
           {/* Timeline line — desktop only */}
           <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400/50 via-violet-400/30 to-transparent hidden lg:block" />
 
@@ -51,8 +52,8 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <div className="bg-[#0f172a] border border-white/5 rounded-2xl p-5 sm:p-6 lg:p-8 hover:border-cyan-400/15 transition-all duration-300 group">
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3 mb-4 sm:mb-5">
+                <div className="bg-[#0f172a] border border-white/5 rounded-2xl p-5 sm:p-6 hover:border-cyan-400/15 transition-all duration-300 group">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3 mb-4">
                     <div className="min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-1">
                         <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
