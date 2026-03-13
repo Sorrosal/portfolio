@@ -6,7 +6,7 @@ export const personal = {
   email: "sergiosorrosalgayan@gmail.com",
   phone: "+34 654 570 464",
   linkedin: "https://www.linkedin.com/in/sergiosorrosal",
-  github: "https://github.com/sergiosorrosal",
+  github: "https://github.com/Sorrosal",
   summary:
     "Seasoned senior engineer and software architect with a strong background in full-stack .NET and Azure development. I excel in microservices design, CI/CD automation, and cloud infrastructure management, driving innovations that enhance efficiency and scalability. My experience ranges from team mentoring to delivering robust, user-centric solutions using React and Azure.",
 };

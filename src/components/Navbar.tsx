@@ -20,6 +20,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const onResize = () => { if (window.innerWidth >= 768) setOpen(false); };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
@@ -31,7 +37,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <a
           href="#hero"
           className="font-mono text-sm font-semibold text-cyan-400 tracking-widest uppercase hover:text-cyan-300 transition-colors"
@@ -40,7 +46,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8">
           {links.map((link) => (
             <li key={link.href}>
               <a
@@ -63,7 +69,8 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-slate-400 hover:text-white transition-colors"
+          aria-label="Toggle menu"
+          className="md:hidden text-slate-400 hover:text-white transition-colors p-1"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -76,20 +83,29 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#030712]/95 backdrop-blur-md border-b border-white/5"
+            className="md:hidden bg-[#030712]/97 backdrop-blur-md border-b border-white/5 overflow-hidden"
           >
-            <ul className="flex flex-col px-6 py-4 gap-4">
+            <ul className="flex flex-col px-4 pt-3 pb-4 gap-1">
               {links.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="text-slate-300 hover:text-cyan-400 transition-colors font-medium"
+                    className="block py-2.5 px-3 rounded-lg text-slate-300 hover:text-cyan-400 hover:bg-cyan-400/5 transition-colors font-medium text-sm"
                   >
                     {link.label}
                   </a>
                 </li>
               ))}
+              <li className="pt-2 border-t border-white/5 mt-1">
+                <a
+                  href="mailto:sergiosorrosalgayan@gmail.com"
+                  onClick={() => setOpen(false)}
+                  className="block py-2.5 px-3 rounded-lg text-cyan-400 font-semibold text-sm hover:bg-cyan-400/10 transition-colors"
+                >
+                  Hire me →
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}
