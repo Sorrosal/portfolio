@@ -4,7 +4,6 @@ export const personal = {
   subtitle: "Senior .NET Engineer · Azure Cloud Architect",
   location: "Zaragoza, Spain",
   email: "sergiosorrosalgayan@gmail.com",
-  phone: "+34 654 570 464",
   linkedin: "https://www.linkedin.com/in/sergiosorrosal",
   github: "https://github.com/Sorrosal",
   summary:

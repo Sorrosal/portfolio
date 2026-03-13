@@ -32,7 +32,7 @@ export default function Skills() {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
           {Object.entries(skills).map(([category, items], i) => (
             <motion.div
               key={category}
@@ -40,14 +40,14 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`bg-gradient-to-br ${categoryColors[category]} border rounded-2xl p-5 sm:p-6`}
+              className={`bg-gradient-to-br ${categoryColors[category]} border rounded-2xl p-7 sm:p-8`}
             >
-              <h3 className="font-bold text-white mb-4 text-base sm:text-lg">{category}</h3>
+              <h3 className="font-bold text-white mb-5 text-base sm:text-lg">{category}</h3>
               <div className="flex flex-wrap gap-2">
                 {items.map((skill) => (
                   <span
                     key={skill}
-                    className={`text-xs font-medium border rounded-full px-3 py-1 transition-colors cursor-default ${badgeColors[category]}`}
+                    className={`text-xs font-medium border rounded-full px-3 py-1.5 transition-colors cursor-default ${badgeColors[category]}`}
                   >
                     {skill}
                   </span>

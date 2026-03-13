@@ -120,13 +120,13 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl transition-all duration-200 shadow-lg shadow-cyan-500/20 text-sm sm:text-base"
+              className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-7 py-3.5 rounded-xl transition-all duration-200 shadow-lg shadow-cyan-500/20 text-sm"
             >
               Get in touch
             </a>
             <a
               href="#experience"
-              className="inline-flex items-center gap-2 border border-white/10 hover:border-cyan-400/40 text-slate-300 hover:text-white font-semibold px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl transition-all duration-200 bg-white/5 text-sm sm:text-base"
+              className="inline-flex items-center gap-2 border border-white/10 hover:border-cyan-400/40 text-slate-300 hover:text-white font-semibold px-7 py-3.5 rounded-xl transition-all duration-200 bg-white/5 text-sm"
             >
               View my work
             </a>
