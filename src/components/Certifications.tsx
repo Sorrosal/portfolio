@@ -4,10 +4,9 @@ import { certifications, education } from "../data/portfolio";
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-16 sm:py-24 relative">
+    <section id="certifications" className="py-16 sm:py-24 relative flex justify-center">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0f172a]/40 to-transparent pointer-events-none" />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        {/* Centered section header */}
+      <div className="w-full max-w-6xl px-4 sm:px-6 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +23,6 @@ export default function Certifications() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-          {/* Certifications */}
           <div>
             <div className="flex items-center gap-3 mb-5 sm:mb-6">
               <div className="w-8 h-8 rounded-lg bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center shrink-0">
@@ -58,7 +56,6 @@ export default function Certifications() {
             </div>
           </div>
 
-          {/* Education */}
           <div>
             <div className="flex items-center gap-3 mb-5 sm:mb-6">
               <div className="w-8 h-8 rounded-lg bg-violet-400/10 border border-violet-400/20 flex items-center justify-center shrink-0">

@@ -4,10 +4,9 @@ import { experience } from "../data/portfolio";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 sm:py-24 relative">
+    <section id="experience" className="py-16 sm:py-24 relative flex justify-center">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0f172a]/30 to-transparent pointer-events-none" />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        {/* Centered section header */}
+      <div className="w-full max-w-6xl px-4 sm:px-6 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +23,6 @@ export default function Experience() {
         </motion.div>
 
         <div className="relative max-w-3xl mx-auto">
-          {/* Timeline line — desktop only */}
           <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400/50 via-violet-400/30 to-transparent hidden lg:block" />
 
           <div className="space-y-6 sm:space-y-8">
@@ -37,7 +35,6 @@ export default function Experience() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="lg:pl-16 relative"
               >
-                {/* Timeline dot — desktop only */}
                 <div className="absolute left-4 top-6 hidden lg:block">
                   <div
                     className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
@@ -78,7 +75,6 @@ export default function Experience() {
                       </span>
                     </div>
                   </div>
-
                   <ul className="space-y-2">
                     {job.description.map((item, j) => (
                       <li key={j} className="flex gap-2 sm:gap-3 text-slate-400 text-sm leading-relaxed">

@@ -31,8 +31,8 @@ const contactItems = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 sm:py-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="contact" className="py-16 sm:py-24 flex justify-center">
+      <div className="w-full max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -31,13 +31,13 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 flex justify-center ${
         scrolled
           ? "bg-[#030712]/90 backdrop-blur-md border-b border-white/5 shadow-lg"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <nav className="w-full max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between">
         <a
           href="#hero"
           className="font-mono text-sm font-semibold text-cyan-400 tracking-widest uppercase hover:text-cyan-300 transition-colors"
@@ -45,7 +45,6 @@ export default function Navbar() {
           SS<span className="text-white/30">.</span>dev
         </a>
 
-        {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-6 lg:gap-8">
           {links.map((link) => (
             <li key={link.href}>
@@ -66,7 +65,6 @@ export default function Navbar() {
           Hire me
         </a>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
@@ -76,14 +74,13 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#030712]/97 backdrop-blur-md border-b border-white/5 overflow-hidden"
+            className="md:hidden absolute top-16 inset-x-0 bg-[#030712]/97 backdrop-blur-md border-b border-white/5 overflow-hidden"
           >
             <ul className="flex flex-col px-4 pt-3 pb-4 gap-1">
               {links.map((link) => (

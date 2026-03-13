@@ -10,9 +10,8 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="py-16 sm:py-24 relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Centered section header */}
+    <section id="about" className="py-16 sm:py-24 relative flex justify-center">
+      <div className="w-full max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +30,6 @@ export default function About() {
           </h2>
         </motion.div>
 
-        {/* Content: summary + stats */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

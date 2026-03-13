@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { skills } from "../data/portfolio";
 
 const categoryColors: Record<string, string> = {
-  "Backend & Cloud": "from-cyan-400/20 to-cyan-400/5 border-cyan-400/20 text-cyan-300",
-  "Frontend": "from-violet-400/20 to-violet-400/5 border-violet-400/20 text-violet-300",
-  "Tools & Practices": "from-emerald-400/20 to-emerald-400/5 border-emerald-400/20 text-emerald-300",
+  "Backend & Cloud": "from-cyan-400/20 to-cyan-400/5 border-cyan-400/20",
+  "Frontend": "from-violet-400/20 to-violet-400/5 border-violet-400/20",
+  "Tools & Practices": "from-emerald-400/20 to-emerald-400/5 border-emerald-400/20",
 };
 
 const badgeColors: Record<string, string> = {
@@ -15,9 +15,8 @@ const badgeColors: Record<string, string> = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-16 sm:py-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Centered section header */}
+    <section id="skills" className="py-16 sm:py-24 flex justify-center">
+      <div className="w-full max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

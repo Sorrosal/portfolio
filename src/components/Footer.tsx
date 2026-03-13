@@ -3,8 +3,8 @@ import { personal } from "../data/portfolio";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 py-8 sm:py-10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+    <footer className="border-t border-white/5 py-8 sm:py-10 flex justify-center">
+      <div className="w-full max-w-6xl px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
         <div className="text-center sm:text-left">
           <p className="text-sm font-mono text-cyan-400 font-bold">SS.dev</p>
           <p className="text-xs text-slate-500 mt-0.5">
